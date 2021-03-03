@@ -1,0 +1,44 @@
+
+   <h1>FACTURA DE VENTA</h1>
+   
+
+
+  <div class="input-group input-group-sm mb-3">
+    <span class="input-group-text" id="fecha">Fecha</span>
+    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+  </div>
+
+  <div class="input-group input-group-sm mb-3">
+    <span class="input-group-text" id="nombre_cliente">Nombre del Cliente</span>
+    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+  </div>
+
+  <div class="input-group input-group-sm mb-3">
+    <span class="input-group-text" id="id_cliente">CC/NIT</span>
+    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+  </div>
+
+  <div class="input-group input-group-sm mb-3">
+    <span class="input-group-text" id="direccion">Dirección</span>
+    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+  </div>
+
+  <div class="input-group input-group-sm mb-3">
+    <span class="input-group-text" id="telefono">Telefono</span>
+    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+  </div>
+
+  <div class="input-group input-group-sm mb-3">
+    <span class="input-group-text" id="correo">e-mail</span>
+    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+  </div>
+
+  
+  <div class="row">
+    <div class="col-2">
+      <div class="list-group" id="list-tab" role="tablist">
+        <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="settings"  [routerLink]="['invoice']">Facturar</a>
+      </div>
+    </div>
+  <router-outlet> </router-outlet>
+

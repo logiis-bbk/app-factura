@@ -3,10 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PrincipalComponent } from './componentes/principal/principal.component';
+import { GenerateComponent } from './componentes/generate/generate.component';
+import { ApproveComponent } from './componentes/approve/approve.component';
+import { ReporteComponent } from './componentes/reporte/reporte.component';
+import { InvoiceComponent } from './componentes/generate/invoice/invoice.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PrincipalComponent,
+    GenerateComponent,
+    ApproveComponent,
+    ReporteComponent,
+    InvoiceComponent
   ],
   imports: [
     BrowserModule,
