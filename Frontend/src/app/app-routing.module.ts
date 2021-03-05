@@ -1,22 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { GenerateComponent } from './componentes/generate/generate.component';
-import { ReporteComponent } from './componentes/reporte/reporte.component';
-import { ApproveComponent } from './componentes/approve/approve.component';
-import { InvoiceComponent } from './componentes/generate/invoice/invoice.component';
+import { HogarComponent } from './hogar/hogar.component';
+import { CrearComponent } from './crear/crear.component';
+import { ConsultarComponent } from './consultar/consultar.component';
+
+
+/* Se grean las rutas a partir de los componentes importados*/
 const routes: Routes = [
-
-  {path: 'reporte', component: ReporteComponent},
-  {path: 'approve', component: ApproveComponent},
-  {path: 'generate', component: GenerateComponent,
-  /* ruta para la factura */
-    children:     [
-        {path: 'invoice', component: InvoiceComponent},
-    ]
-  },
+    
+  {path: '', redirectTo:'/crear', pathMatch:'full'},
+  {path: 'hogar', component:HogarComponent},
+  {path: 'crear', component:CrearComponent},
+  {path: 'consultar', component:ConsultarComponent}
 
 
-];
+
+]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

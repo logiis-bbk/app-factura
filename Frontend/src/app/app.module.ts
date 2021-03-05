@@ -1,24 +1,22 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-
-import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PrincipalComponent } from './componentes/principal/principal.component';
-import { GenerateComponent } from './componentes/generate/generate.component';
-import { ApproveComponent } from './componentes/approve/approve.component';
-import { ReporteComponent } from './componentes/reporte/reporte.component';
-import { InvoiceComponent } from './componentes/generate/invoice/invoice.component';
+import { HogarComponent } from './hogar/hogar.component';
+import { CrearComponent } from './crear/crear.component';
+import { ConsultarComponent } from './consultar/consultar.component';
+//se importa el modulo http:
+import { HttpClientModule } from '@angular/common/http';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    PrincipalComponent,
-    GenerateComponent,
-    ApproveComponent,
-    ReporteComponent,
-    InvoiceComponent
+    HogarComponent,
+    CrearComponent,
+    ConsultarComponent,
   ],
   imports: [
     BrowserModule,
