@@ -1,1 +1,37 @@
-<p>consultar works!</p>
+<div class="container p3">
+    <div class="row">
+        <div class="col-md-8">
+            <table class="table table-bordered table-dark">
+                <caption>List of Products</caption>
+                <thead>
+                    <tr>
+                        <th>NUMERO FACTURA</th>
+                        <th>FECHA</th>
+                        <th>CLIENTE</th>
+                        <th>MERCANCIA</th>
+                        <th>PRECIO</th>
+                        <th>ESTADO FACTURA</th>
+                        <th>ELIMINAR REGISTROS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let factura of facturas;">
+                        <td>{{factura.id}}</td>
+                        <td>{{factura.fecha}}</td>
+                        <td>{{factura.cliente}}</td>
+                        <td>{{factura.mercancia}}</td>
+                        <td>{{factura.precio}}</td>
+                        <th>{{factura.estado}}</th>
+                        <td><button class="btn btn-danger"
+                            (click)="eliminaFactura(factura.id)">ELIMINAR</button> </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+
+
+</div>
+<div>{{myDato | date:'longDate'}}</div>

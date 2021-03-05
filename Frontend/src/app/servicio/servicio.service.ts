@@ -23,4 +23,8 @@ export class ServicioService {
     // return this.http.get<Factura[]>(this.url+'/factura')
     return this.http.get<any>(this.baseUrl);
   }
+
+  public eliminaFactura(id: string) {
+    return this.http.delete<any>(this.baseUrl+`?id=${id}`)
+  }
 }

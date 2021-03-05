@@ -11,7 +11,7 @@ import { ServicioService } from '../servicio/servicio.service';
 })
 export class HogarComponent implements OnInit {
 
-  // array:
+ 
 
   facturas: Factura[] = []
 

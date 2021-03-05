@@ -6,4 +6,5 @@ export interface Factura {
     cliente:'',
     mercancia:'',
     precio:'',
+    estado:'',
 }
